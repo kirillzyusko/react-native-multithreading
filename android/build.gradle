@@ -1,2 +1,2 @@
 configurations.maybeCreate("default")
-artifacts.add("default", file('rnmultithreading-variant.aar')) // TODO: Use release variant here?
+artifacts.add("default", file('rnmultithreading-release.aar')) // TODO: Use release variant here?
