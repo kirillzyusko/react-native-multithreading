@@ -65,3 +65,5 @@ native_prebuilt
 ndk-deps
 
 android-npm
+
+*.hprof
