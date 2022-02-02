@@ -1,6 +1,6 @@
 {
   "name": "react-native-multithreading",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "🧵 Fast and easy multithreading for React Native using JSI",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -25,7 +25,6 @@
     "bootstrap": "yarn && cd example && yarn && cd ios && pod install",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build && scripts/build-android.sh",
     "prepack": "rm -rf android-backup && mv android android-backup && mv android-npm android",
     "postpack": "mv android android-npm && mv android-backup android",
     "release": "release-it"
