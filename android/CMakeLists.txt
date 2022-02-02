@@ -12,6 +12,7 @@ set (BUILD_DIR ${CMAKE_SOURCE_DIR}/build)
 add_library(
         ${PACKAGE_NAME}
         SHARED
+        "${NODE_MODULES_DIR}/react-native/ReactCommon/jsi/jsi/jsi.cpp"
         src/main/cpp/cpp-adapter.cpp
         ../cpp/RNMultithreadingInstaller.cpp
         ../cpp/ThreadPool.cpp
@@ -35,7 +36,6 @@ target_include_directories(
         "${NODE_MODULES_DIR}/react-native/ReactAndroid/src/main/java/com/facebook/react/turbomodule/core/jni"
         "${NODE_MODULES_DIR}/react-native/ReactCommon"
         "${NODE_MODULES_DIR}/react-native/ReactCommon/callinvoker"
-        "${NODE_MODULES_DIR}/react-native/ReactCommon/jsi"
         "${NODE_MODULES_DIR}/react-native/ReactCommon/jsi"
         "${NODE_MODULES_DIR}/react-native-reanimated/Common/cpp/headers/Tools"
         "${NODE_MODULES_DIR}/react-native-reanimated/Common/cpp/headers/SpecTools"

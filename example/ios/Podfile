@@ -8,7 +8,7 @@ target 'MultithreadingExample' do
 
   use_react_native!(
     :path => config["reactNativePath"],
-    :hermes_enabled => true
+    :hermes_enabled => false
   )
 
   pod 'react-native-multithreading', :path => '../..'
@@ -17,7 +17,7 @@ target 'MultithreadingExample' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable these next few lines.
-  use_flipper!()
+  # use_flipper!()
 
   post_install do |installer|
     react_native_post_install(installer)
